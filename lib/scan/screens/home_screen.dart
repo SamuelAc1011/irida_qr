@@ -2,6 +2,7 @@ import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:irida_qr/theme/blocs/blocs.dart';
+import 'package:lottie/lottie.dart';
 
 @RoutePage()
 class HomeScreen extends StatelessWidget {
@@ -27,7 +28,12 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(child: Text('Home Screen')),
+      body: Center(
+        child: Lottie.asset(
+          'assets/lotties/search.json',
+          width: MediaQuery.sizeOf(context).width * 0.3,
+        ),
+      ),
       floatingActionButton: FloatingActionButton.large(
         onPressed: () {},
         tooltip: 'Increment',
