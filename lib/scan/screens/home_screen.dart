@@ -20,9 +20,7 @@ class HomeScreen extends StatelessWidget {
                 icon: Icon(
                   state is DarkTheme ? Icons.light_mode : Icons.dark_mode,
                 ),
-                onPressed: () => context.read<ThemeBloc>().add(
-                      ThemeChanged(),
-                    ),
+                onPressed: () => context.read<ThemeBloc>().add(ThemeChanged()),
               );
             },
           ),
