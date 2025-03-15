@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:irida_qr/theme/theme.dart';
 
 // Widget -> ThemeToggleButton
@@ -15,7 +16,7 @@ class ThemeToggleButton extends StatelessWidget {
       builder: (context, state) {
         return IconButton(
           icon: Icon(
-            state is DarkTheme ? Icons.light_mode : Icons.dark_mode,
+            state is DarkTheme ? IconsaxPlusBold.sun_1 : IconsaxPlusBold.moon,
           ),
           onPressed: () => context.read<ThemeBloc>().add(ThemeChanged()),
         );

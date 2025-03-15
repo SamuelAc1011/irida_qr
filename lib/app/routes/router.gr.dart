@@ -12,7 +12,7 @@ import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:irida_qr/scan/screens/home_screen.dart' as _i1;
 
 /// generated route for
-/// [_i1.HomeScreen]
+/// [_i1.HomeProvider]
 class HomeRoute extends _i2.PageRouteInfo<void> {
   const HomeRoute({List<_i2.PageRouteInfo>? children})
       : super(
@@ -25,7 +25,7 @@ class HomeRoute extends _i2.PageRouteInfo<void> {
   static _i2.PageInfo page = _i2.PageInfo(
     name,
     builder: (data) {
-      return const _i1.HomeScreen();
+      return const _i1.HomeProvider();
     },
   );
 }

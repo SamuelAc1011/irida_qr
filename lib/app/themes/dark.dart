@@ -11,7 +11,7 @@ final darkTheme = ThemeData(
     backgroundColor: Colors.transparent,
     actionsIconTheme: const IconThemeData(color: Colors.white),
   ),
-  scaffoldBackgroundColor: const Color(0xFF1E1E1E),
+  scaffoldBackgroundColor: const Color(0xFF363636),
   useMaterial3: true,
   textTheme: GoogleFonts.latoTextTheme().apply(
     bodyColor: Colors.white,
